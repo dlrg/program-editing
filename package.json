@@ -1,0 +1,21 @@
+{
+  "name": "pogram-export",
+  "version": "1.0.0",
+  "description": "Eport Program to InCopy/InDesign Text",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-packager ./ Program-Editing --platform=win32 --arch=x64",
+    "setIcon": "cp Icon.icns Program-Editing-win32-x64/resources/app/Icon.icns"
+  },
+  "author": "Momme Jürgensen <momme@juergensen.me>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2",
+    "xml2js": "^0.4.16"
+  }
+}
