@@ -11,11 +11,11 @@
   "author": "Momme Jürgensen <momme@juergensen.me>",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron-prebuilt": "^0.36.0"
+    "electron-prebuilt": "^0.36.12"
   },
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "jquery": "^2.2.2",
-    "xml2js": "^0.4.16"
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.0.0",
+    "xml2js": "^0.4.19"
   }
 }
