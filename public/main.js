@@ -17,22 +17,19 @@ function convertXml(file, callback) {
       alert("Ein Problem mit der Datei ist aufgetreten.\nEs Könnte vieleicht ein '&' sein.\nBitte überprüfen sie die Datei nach einem '&' oder anderen Fehlern.")
       return;
     }
-    days = result["ljtr-2017"].day
+    days = result["ljtr-2018"].day
     out = "";
     for (var i = 0; i < days.length; i++) {
       events = days[i].event
+      console.log(i)
       if (i === 0) {
-        out = out+"Montag, 23.05.2017\n"
+        out = out+"Donnerstag, 10.05.2018 (Anreisetag)\n"
       } else if (i === 1) {
-        out = out+"Mittwoch, 24.05.2017\n"
+        out = out+"Freitag, 11.05.2018\n"
       } else if (i === 2) {
-        out = out+"Donnerstag, 25.05.2017 (Anreisetag)\n"
+        out = out+"Samstag, 12.05.2018\n"
       } else if (i === 3) {
-        out = out+"Freitag, 26.05.2017\n"
-      } else if (i === 4) {
-        out = out+"Samstag, 27.05.2017\n"
-      } else if (i === 5) {
-        out = out+"Sonntag, 28.05.2017 (Abreisetag)\n"
+        out = out+"Sonntag, 13.05.2018 (Abreisetag)\n"
       }
       for (var r = 0; r < events.length; r++) {
         if (events[r].end[0] == "") {
